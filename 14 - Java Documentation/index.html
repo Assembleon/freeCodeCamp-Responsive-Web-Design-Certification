@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Java Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Java Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+        <li><a class="nav-link" href="#Java_vs._JavaScript">Java vs. JavaScript</a></li>
+        <li><a class="nav-link" href="#Hello_world">Hello World</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+        <li><a class="nav-link" href="#Control_Flow_Statements">Control Flow Statements</a></li>
+        <li><a class="nav-link" href="#Methods">Methods</a></li>
+        <li><a class="nav-link" href="#Classes_and_Objects">Classes and Objects</a></li>
+        <li><a class="nav-link" href="#Inheritance">Inheritance</a></li>
+        <li><a class="nav-link" href="#References">References</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let application developers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header>What you should already know</header>
+        <article>
+          <p>This guide assumes you have the following basic background:</p>
+          <ul>
+            <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+            <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+            <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about Java.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Java_vs._JavaScript">
+        <header>Java vs. JavaScript</header>
+        <article>
+          <p>
+            While Java and JavaScript share similar names and are both widely used in web development, they are fundamentally different in several ways. Java is a statically typed, compiled language used primarily for backend development, while JavaScript is a dynamically typed, interpreted language used mainly for frontend development.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>Hello World</header>
+        <article>
+          <p>To get started with writing Java, here is your first "Hello World" Java code:</p>
+          <code>
+            public class HelloWorld {<br>
+              &nbsp;&nbsp;public static void main(String[] args) {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello, World!");<br>
+              &nbsp;&nbsp;}<br>
+            }
+          </code>
+          <p>
+            Save this code in a file named <code>HelloWorld.java</code>, then compile and run it using the Java compiler and runtime.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p>In Java, variables are containers that hold data that can be changed during the execution of a program. Here is how you can declare variables:</p>
+          <code>
+            int myNumber = 42;<br>
+            String myString = "Hello, World!";
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <article>
+          <p>Java supports several data types including:</p>
+          <ul>
+            <li>int - for integers</li>
+            <li>double - for floating-point numbers</li>
+            <li>boolean - for true/false values</li>
+            <li>char - for single characters</li>
+            <li>String - for a sequence of characters</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Control_Flow_Statements">
+        <header>Control Flow Statements</header>
+        <article>
+          <p>Control flow statements in Java include if, for, while, and switch statements. Here is an example of an if statement:</p>
+          <code>
+            if (condition) {<br>
+              &nbsp;&nbsp;System.out.println("Condition is true");<br>
+            } else {<br>
+              &nbsp;&nbsp;System.out.println("Condition is false");<br>
+            }
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Methods">
+        <header>Methods</header>
+        <article>
+          <p>Methods are blocks of code that perform a specific task. Here is how you can define a method in Java:</p>
+          <code>
+            public int addNumbers(int a, int b) {<br>
+              &nbsp;&nbsp;return a + b;<br>
+            }
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Classes_and_Objects">
+        <header>Classes and Objects</header>
+        <article>
+          <p>Classes are blueprints for creating objects. Here is an example of a simple class:</p>
+          <code>
+            public class Dog {<br>
+              &nbsp;&nbsp;String name;<br>
+              &nbsp;&nbsp;int age;<br>
+              &nbsp;&nbsp;public void bark() {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Woof!");<br>
+              &nbsp;&nbsp;}<br>
+            }
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Inheritance">
+        <header>Inheritance</header>
+        <article>
+          <p>Inheritance allows one class to inherit the fields and methods of another class. Here is an example:</p>
+          <code>
+            public class Animal {<br>
+              &nbsp;&nbsp;public void eat() {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("This animal eats");<br>
+              &nbsp;&nbsp;}<br>
+            }<br>
+            public class Dog extends Animal {<br>
+              &nbsp;&nbsp;public void bark() {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Woof!");<br>
+              &nbsp;&nbsp;}<br>
+            }
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="References">
+        <header>References</header>
+        <article>
+          <ul>
+            <li>All the documentation in this page is taken from <a href="https://docs.oracle.com/javase/tutorial/" target="_blank">Oracle Java Tutorials</a></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
