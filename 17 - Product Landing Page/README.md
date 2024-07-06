@@ -33,7 +33,7 @@ To view and edit this project, you need a code editor (like VS Code) and a web b
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/premium-guitars-landing-page.git
+    git clone https://github.com/Assembleon/freeCodeCamp-Responsive-Web-Design-Certification/premium-guitars-landing-page.git
     ```
 
 2. **Navigate to the project directory**:
